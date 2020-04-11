@@ -123,6 +123,8 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
+# https://devcenter.heroku.com/articles/django-assets
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Authentication
 LOGIN_REDIRECT_URL='/'
