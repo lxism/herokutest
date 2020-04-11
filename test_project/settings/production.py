@@ -32,9 +32,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, '../static/'),
 )
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -117,13 +115,13 @@ USE_TZ = True
 
 
 # https://stackoverflow.com/questions/52311724/500-error-when-debug-false-with-heroku-and-django
-COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
+#COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = 'static'
+STATIC_URL = '/static/'
 
 
 # Authentication
