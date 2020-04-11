@@ -115,7 +115,7 @@ USE_TZ = True
 
 
 # https://stackoverflow.com/questions/52311724/500-error-when-debug-false-with-heroku-and-django
-# COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
+COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 
 
 # Static files (CSS, JavaScript, Images)
